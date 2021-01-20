@@ -1,0 +1,77 @@
+
+.row1 {
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    text-align: center;
+}
+
+.content .row1 {
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.row1 a:hover {
+    text-decoration: underline;
+}
+.img{
+    width: 600px;
+    height: 200px;
+    border-radius: 5px;
+}
+.tit{
+
+    text-transform: uppercase;
+    left: 50%;
+
+    top: 69px;
+    font-size: 30px;
+    color: #e68c4b;
+    z-index: 4;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px
+}
+.img {
+    width: 600px;
+    height: 200px;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.row1:hover .nen{
+    background-color: #504a4a1f;
+}
+.row1:hover .img{
+    transform: scale(1);
+}
+.row1:hover .tit{
+    color: #ff6b00;
+}
+.bar1, .bar2{
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    z-index: 3;
+    top: 140px;
+    margin-left: 300px;
+    transition: 0.2s;
+}
+.row1:hover .bar1{
+    transform: rotate(25deg);
+}
+.row1:hover .bar2{
+    transform: rotate(-25deg);
+}
+.nen{
+
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 200px;
+    top: 9px;
+    left: 99px;
+    transition: 0.2s;
+}

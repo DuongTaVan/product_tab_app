@@ -1,0 +1,995 @@
+@font-face{
+
+  font-family:"ShopifySans";
+
+  src:url("https://cdn.shopify.com/shopify-marketing_assets/static/ShopifySans--light.woff2") format("woff2");
+
+  font-style:normal;font-weight:300;
+
+  font-display:swap
+
+}
+
+@font-face{
+
+  font-family:"ShopifySans";
+
+  src:url("https://cdn.shopify.com/shopify-marketing_assets/static/ShopifySans--regular.woff2") format("woff2");
+
+  font-style:normal;font-weight:400;font-display:swap
+
+}
+
+@font-face{
+
+  font-family:"ShopifySans";
+
+  src:url("https://cdn.shopify.com/shopify-marketing_assets/static/ShopifySans--medium.woff2") format("woff2");
+
+  font-style:normal;font-weight:500;font-display:swap
+
+}
+
+@font-face{
+
+  font-family:"ShopifySans";
+
+  src:url("https://cdn.shopify.com/shopify-marketing_assets/static/ShopifySans--bold.woff2") format("woff2");
+
+  font-style:normal;font-weight:700;font-display:swap
+
+}
+
+@font-face{
+
+  font-family:"ShopifySans";
+
+  src:url("https://cdn.shopify.com/shopify-marketing_assets/static/ShopifySans--black.woff2") format("woff2");
+
+  font-style:normal;font-weight:900;font-display:swap}
+
+body{
+
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0;padding:0;background:#fff;
+
+  font-family:ShopifySans, Helvetica, Arial, Lucida Grande, sans-serif;line-height:1.5;color:#637381;
+
+  font-weight:400
+
+}
+
+.ndnapps-wrapper,#ndnapps-footer{font-family: ShopifySans, Helvetica, Arial, Lucida Grande, sans-serif;}
+
+table.table{width: 100%;font-size: 14px;}
+
+.ndnapps-wrapper .navbar{
+
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; z-index: 998;
+
+}
+
+table.table .checkbox{margin-bottom: 0 !important;padding-left: 7px;}
+
+.nav.navbar-nav a:hover {background: #e7e7e7 !important;}
+
+.nav.navbar-nav .active a:after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -20px;
+
+    left: 42%;
+
+    border: 10px solid transparent;
+
+    border-top-color: #e7e7e7;
+
+}
+
+.nav.navbar-right {
+
+    margin-right: 15px;
+
+}
+
+.ndnapps-wrapper-body {
+
+    margin-top: 75px;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+}
+.ndnapps-wrapper-body .page-header {
+    margin-top: 0px;
+}
+.ndnapps-wrapper label{font-weight: 500 !important;}
+
+.ndn-loading {
+
+  bottom: 0;
+
+    height: 100%;
+
+    left: 0;
+
+    margin: 0 auto;
+
+    position: fixed;
+
+    right: 0;
+
+    text-align: center;
+
+    top: 40%;
+
+    width: 100%;
+
+    z-index: 9999;
+
+}
+
+/* Transparent Overlay */
+
+.ndn-loading:before, .ndn-message .ndn-overlay:before {
+
+  content: '';
+
+  display: block;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+.ndn-message .alert{position: relative;}
+
+.ndn-loading img{width: 50px;}
+
+
+
+.switch {
+
+   	position: relative;
+
+    display: inline-block;
+
+    width: 60px;
+
+    height: 26px;
+
+}
+
+.switch-form {
+
+  top: 26px !important;
+
+	left: 15px !important;
+
+	position: absolute !important;
+
+}
+
+
+
+.switch input {display:none;}
+
+
+
+.slider {
+
+  position: absolute;
+
+  cursor: pointer;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background-color: #ccc;
+
+  -webkit-transition: .4s;
+
+  transition: .4s;
+
+}
+
+
+
+.slider:before {
+
+  position: absolute;
+
+  content: "";
+
+  height: 18px;
+
+  width: 18px;
+
+  left: 3px;
+
+  bottom: 4px;
+
+  background-color: white;
+
+  -webkit-transition: .4s;
+
+  transition: .4s;
+
+}
+
+.slider::after {
+
+    content: "OFF";
+
+    right: 10px;
+
+    position: absolute;
+
+    top: 3px;
+
+    color: #999;
+
+}
+
+
+
+input:checked + .slider {
+
+  background-color: #3ac47d;
+
+}
+
+
+
+input:focus + .slider {
+
+  box-shadow: 0 0 1px #3ac47d;
+
+}
+
+
+
+input:checked + .slider:before {
+
+  -webkit-transform: translateX(36px);
+
+  -ms-transform: translateX(36px);
+
+  transform: translateX(36px);
+
+}
+
+input:checked + .slider::after {
+
+    content: "ON";
+
+    position: absolute;
+
+    top: 3px;
+
+    left: 10px;
+
+    color: #fff;
+
+}
+
+/* Rounded sliders */
+
+.slider.round {
+
+  border-radius: 34px;
+
+}
+
+
+
+.slider.round:before {
+
+  border-radius: 50%;
+
+}
+
+.input-field {
+
+  width: 100%;
+
+  padding: 7px 20px 7px 90px;
+
+  margin: 0;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e7e7e7;
+
+  -webkit-transition: 0.5s;
+
+  transition: 0.5s;
+
+  outline: none;
+
+  border-radius: 34px;
+
+  border-top-right-radius: 0;
+
+  border-bottom-right-radius: 0;
+
+  color: #9a9a9a;
+
+}
+
+
+
+.input-field:focus {
+
+    border: 1px solid #555;
+
+}
+
+.input-field-nopadding{
+
+    padding-left: 20px !important;
+
+    border-radius: 34px;
+
+    width: 56%;
+
+}
+
+.row-item{margin: 10px 0;}
+
+.input-container code{padding: 0 !important;background: none !important;}
+
+
+
+.button-save {
+
+    border-radius: 34px;
+
+    border: none;
+
+    color: #FFFFFF;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    padding: 5px 15px;
+
+    transition: all 0.5s;
+
+    cursor: pointer;
+
+    box-shadow: 0px 1px 4px 0px #333;
+
+    position: relative;
+
+    outline: none;
+
+    /*background: rgb(28, 34, 96);*/
+
+    display: none;
+
+    margin-left: 5px;
+
+}
+
+.ndnapps-wrapper button:focus, .ndnapps-wrapper button:active {
+
+    outline: none;
+
+    color: #fff;
+
+}
+
+.button-save span {
+
+  cursor: pointer;
+
+  display: inline-block;
+
+  position: relative;
+
+  transition: 0.5s;
+
+}
+
+
+
+.button-save span:after {
+
+  content: '\00bb';
+
+  position: absolute;
+
+  opacity: 0;
+
+  top: 0;
+
+  right: -12px;
+
+  transition: 0.5s;
+
+}
+
+
+
+.button-save:hover span {
+
+  padding-right: 12px;
+
+  color: #fff;
+
+}
+
+
+
+.button-save:hover span:after {
+
+  opacity: 1;
+
+  right: 0;
+
+}
+
+
+
+/* Style tab links */
+
+.ndn-tablink {
+
+    background-color: #ddd;
+
+    color: white;
+
+    float: left;
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    width: 33.33%;
+
+    box-shadow: 0 3px #999;
+
+    border-radius: 34px;
+
+}
+
+
+
+.ndn-tablink:hover {
+
+    background-color: #ccc;
+
+}
+
+
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.ndn-tabcontent {
+
+    max-height: 100%;
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    height: auto;
+
+    width: 100%;
+
+}
+
+.ndn-tabcontent .row{padding:10px 0;}
+
+.margin-top-bottom-5{margin: 5px 0;}
+
+ul.ul-note {padding-left: 0px;}
+
+ul.ul-note li{list-style: none;}
+
+
+
+
+
+/* CUSTOM RADIO BUTTON */
+
+.radio-container {
+
+    display: block;
+
+    position: relative;
+
+    padding-left: 35px;
+
+    margin-top: 6px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+    user-select: none;
+
+}
+
+
+
+/* Hide the browser's default radio button */
+
+.radio-container input {
+
+    position: absolute;
+
+    opacity: 0;
+
+    cursor: pointer;
+
+}
+
+
+
+/* Create a custom radio button */
+
+.radio-checkmark {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    height: 20px;
+
+    width: 20px;
+
+    background-color: #eee;
+
+    border-radius: 50%;
+
+}
+
+
+
+/* On mouse-over, add a grey background color */
+
+.radio-container:hover input ~ .radio-checkmark {
+
+    background-color: #ccc;
+
+}
+
+
+
+/* When the radio button is checked, add a blue background */
+
+.radio-container input:checked ~ .radio-checkmark {
+
+    background-color: #92C016;
+
+}
+
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.radio-checkmark:after {
+
+    content: "";
+
+    position: absolute;
+
+    display: none;
+
+}
+
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio-container input:checked ~ .radio-checkmark:after {
+
+    display: block;
+
+}
+
+
+
+/* Style the indicator (dot/circle) */
+
+.radio-container .radio-checkmark:after {
+
+  top: 5px;
+
+  left: 5px;
+
+  width: 10px;
+
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: white;
+
+}
+
+.jscolor-custom {
+
+    width: 25px;
+
+    /*border-radius: 50% !important;*/
+
+    height: 25px;
+
+    border: 1px solid #ddd;
+
+    text-indent: -9999;
+
+}
+
+input.jscolor-custom01 {
+
+    position: absolute;
+
+    right: 58px;
+
+    top: 6px;
+
+}
+
+input.jscolor-custom02 {
+
+    position: absolute;
+
+    right: 25px;
+
+    top: 6px;
+
+}
+
+
+
+/*button range slider*/
+
+.rangeslider {
+
+    -webkit-appearance: none;
+
+    width: 100%;
+
+    height: 6px;
+
+    border-radius: 5px;
+
+    background: gray;
+
+    outline: none;
+
+    margin-top: 15px;
+
+    -webkit-transition: .2s;
+
+    transition: opacity .2s;
+
+}
+
+
+
+.rangeslider::-webkit-slider-thumb {
+
+    -webkit-appearance: none;
+
+    appearance: none;
+
+    width: 15px;
+
+    height: 15px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 3px solid #92C016;
+
+    cursor: pointer;
+
+}
+
+
+
+.rangeslider::-moz-range-thumb {
+
+    width: 15px;
+
+    height: 15px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 3px solid #92C016;
+
+    cursor: pointer;
+
+}
+
+/*End button range slider*/
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+
+.ndn-message {
+
+    min-width: 250px;
+
+    margin-left: -150px;
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 2px;
+
+    padding: 16px;
+
+    position: fixed;
+
+    z-index: 999;
+
+    left: 50%;
+
+    top: 20%;
+
+}
+
+
+
+.ndn-message.show {
+
+    visibility: visible; /* Show the snackbar */
+
+
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+
+However, delay the fade out process for 2.5 seconds */
+
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+
+}
+
+
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+
+    from {bottom: 0; opacity: 0;} 
+
+    to {bottom: 30px; opacity: 1;}
+
+}
+
+
+
+@keyframes fadein {
+
+    from {bottom: 0; opacity: 0;}
+
+    to {bottom: 30px; opacity: 1;}
+
+}
+
+
+
+@-webkit-keyframes fadeout {
+
+    from {bottom: 30px; opacity: 1;} 
+
+    to {bottom: 0; opacity: 0;}
+
+}
+
+
+
+@keyframes fadeout {
+
+    from {bottom: 30px; opacity: 1;}
+
+    to {bottom: 0; opacity: 0;}
+
+}
+
+.notification-form .cke_top{background: none;}
+
+.notification-form .cke_bottom{display: none;}
+
+#ndn-notification-item-preview {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    background: #333;
+
+    width: 100%;
+
+    z-index: 9999;
+
+    text-align: center;
+
+    height: auto;
+
+    padding: 15px;
+
+    line-height: 22px;
+
+    color: #fff;
+
+}
+
+#ndn-notification-item-preview p{padding: 0; margin: 0;}
+
+#ndn-preview-mode{
+
+  position: fixed;
+
+  top: 5px;
+
+  left: 10px;
+
+  z-index: 9999;
+
+  background-color: yellow;
+
+  border: 1px dashed;
+
+  padding: 8px;
+
+  display: none;
+
+}
+
+.tooltip{z-index: 9999 !important;}
+
+.tabs-left, .tabs-right {
+
+  border-bottom: none;
+
+  padding-top: 2px;
+
+}
+
+.tabs-left {
+
+  border-right: 1px solid #ddd;
+
+}
+
+.tabs-right {
+
+  border-left: 1px solid #ddd;
+
+}
+
+.tabs-left>li, .tabs-right>li {
+
+  float: none;
+
+  margin-bottom: 2px;
+
+}
+
+.tabs-left>li {
+
+  margin-right: -1px;
+
+}
+
+.tabs-right>li {
+
+  margin-left: -1px;
+
+}
+
+.tabs-left>li.active>a,
+
+.tabs-left>li.active>a:hover,
+
+.tabs-left>li.active>a:focus {
+
+  border-bottom-color: #ddd;
+
+  border-right-color: transparent;
+
+  border-radius: 0;
+
+  border-left: 2px solid #5c6ac4;
+
+}
+
+
+
+.tabs-right>li.active>a,
+
+.tabs-right>li.active>a:hover,
+
+.tabs-right>li.active>a:focus {
+
+  border-bottom: 1px solid #ddd;
+
+  border-left-color: transparent;
+
+}
+
+.tabs-left>li>a {
+
+  border-radius: 4px 0 0 4px;
+
+  margin-right: 0;
+
+  display:block;
+
+}
+
+.tabs-right>li>a {
+
+  border-radius: 0 4px 4px 0;
+
+  margin-right: 0;
+
+}
+
+.checkbox-inline{margin-bottom: 20px !important; padding-top:0 !important;font-weight: 500 !important;}
+.text-note{font-size:13px;}
+.text-warning{color: orange;}
+#ndnapps-footer{padding:20px 0; margin-top:20px; text-align: center;background-color: #f8f9fa!important;clear: both;}
+
+#add_tab-Schedule .row, #edit_tab-Schedule .row{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
+.bootstrap-tagsinput{width: 100%;}
+@media (max-width: 768px) {
+
+	.row-mobile{margin-top: 20px;}
+
+}
+
