@@ -52,6 +52,7 @@ class ProductreviewsController extends Controller
     //backend
 
     public function index(Request $request){
+        //dd(1);
         $shop = ShopifyApp::shop();
         if(!$shop){
             return redirect()->route('login');

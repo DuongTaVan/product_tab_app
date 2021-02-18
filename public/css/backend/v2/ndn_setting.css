@@ -1,0 +1,263 @@
+.bg-light {
+    background-color: #fff !important;
+    border: 1px solid #ebebeb;
+    margin: 0 0 20px 0px;
+}
+
+ul#pills-tab {
+    margin-left: 126px;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 0 0);
+    border: 1px solid #f1efef;
+    padding: 5px;
+    border-top: 4px solid;
+}
+
+.step-number-around {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #da3637;
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+.step-number {
+    width: 100%;
+    height: 100%;
+    font-family: "HelveticaNeue-Bold";
+    background-color: #da3637;
+    color: #fff;
+    border-radius: 100px;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+#left_layout .step-title span {
+    display: inline-block;
+    font-size: 16px;
+    color: #212121;
+    width: 70%;
+    line-height: 32px;
+    /* font-family: "HelveticaNeue-Bold"; */
+    margin-left: 5px;
+}
+
+.icons {
+    float: left;
+    margin-right: 59px;
+}
+
+ul.list-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-icons li {
+    background-color: #69626226;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+}
+
+.list-icons li i {
+    line-height: 34px;
+}
+
+.text-btn {
+    margin-top: 24px;
+}
+
+div#first_step_setting {
+    /* width: 200px; */
+    height: 52px;
+}
+
+.row1 ul .active {
+    background-color: #da3637;
+}
+
+.btn_size {
+    background: #768082;
+    border-color: #768082;
+}
+
+.icons-size .active {
+    background-color: #2e9d64;
+}
+
+.slider-hit-area {
+    background-color: #1b171738;
+    width: 447px;
+    height: 2px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+a.ui-slider-handle.ui-state-default.ui-corner-all {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 260px;
+    background-color: #da3637;
+    border-radius: 100px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    box-sizing: content-box;
+    border: 5px solid #fff;
+}
+
+#right_layout .step-title span {
+    display: inline-block;
+    font-size: 16px;
+    color: #212121;
+    width: 70%;
+    line-height: 32px;
+    /* font-family: "HelveticaNeue-Bold"; */
+    margin-left: 5px;
+}
+
+div#second_step_setting {
+    margin-bottom: 20px;
+}
+
+#exampleModal1 .modal-dialog {
+    max-width: 800px;
+}
+
+.enabling_checkbox {
+    display: none;
+}
+
+.enabling_label {
+    position: relative;
+    display: block;
+    padding-left: 34px;
+    margin-right: 10px;
+    width: auto;
+    height: 24px;
+    background-image: url(https://zotabox.com/media/zbv2/image/tick.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#dropdownMenuButton {
+    color: #72787d;
+    background-color: #ffffff;
+    border-color: #e3e4e8;
+    width: 100%;
+    text-align: inherit;
+}
+
+.ndn-js-add {
+    width: 100px;
+    border: 1px solid #da3637;
+    text-align: center;
+    height: 35px;
+    color: #da3637;
+    margin-top: 10px;
+    background-color: #8c6c6c61;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.ndn-js-add1 {
+    width: 100px;
+    border: 1px solid #da3637;
+    text-align: center;
+    height: 35px;
+    color: #da3637;
+    margin-top: 10px;
+    background-color: #8c6c6c61;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.ndn-js-add:hover {
+    background-color: #989494;
+    color: #e60001;
+}
+
+.fieldtype {
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.fieldname, .remove {
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.btn_top {
+    /* float: right; */
+    margin-left: 407px;
+}
+
+.ft {
+    width: 421px;
+    text-align: center;
+    margin: auto;
+}
+
+.ct {
+    background-color: #f7f8fc;
+    transition: 0.5s;
+}
+
+.ct1 {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gt12 {
+    float: left;
+    transition: 0.5s;
+}
+
+.ct1_1 {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gt1 {
+    /* color: #495057; */
+    font-size: 21px;
+    /* margin-left: 311px; */
+    transform: rotate(270deg);
+    float: right;
+    margin-right: 7px;
+    transition: 0.5s;
+}
+
+.gt1_1 {
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.ct2 select.form-control {
+    width: 250px;
+}
